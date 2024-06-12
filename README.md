@@ -14,7 +14,7 @@
    - On the left-hand menu, click on "Virtual Private Gateways."
    - Click the "Create Virtual Private Gateway" button.
    - Provide a name for your gateway, and select the ASN (Autonomous System Number) or leave it as default.
-   - Click "Create Virtual Private Gateway."
+   - Click "Create Virtual Private Gateway."<br>
    ![image](https://hackmd.io/_uploads/BkqRB7wrA.png)
 
 4. **Attach the Virtual Private Gateway to Your VPC:**
