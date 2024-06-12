@@ -1,4 +1,6 @@
-# aws_site-to-site_vpn
+# AWS Site-To-Site VPN
+
+### Setting up an AWS VPN to an on-premises network involves creating a Virtual Private Gateway on AWS, configuring a Customer Gateway on your on-premises network, and setting up the VPN connection between the two.
 
 ### Step 1: Set Up a Virtual Private Gateway
 
