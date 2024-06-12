@@ -20,7 +20,7 @@
 4. **Attach the Virtual Private Gateway to Your VPC:**
    - Once created, select the Virtual Private Gateway.
    - Click on "Actions" and select "Attach to VPC."
-   - Choose the VPC you want to attach it to and click "Attach."
+   - Choose the VPC you want to attach it to and click "Attach."<br>
    ![image](https://hackmd.io/_uploads/H1gMvXwHC.png)
 
 
@@ -35,7 +35,7 @@
    - Provide a name for the Customer Gateway.
    - Enter the public IP address of your on-premises router or firewall.
    - Select the BGP ASN (if using dynamic routing), or leave it blank for static routing.
-   - Click "Create Customer Gateway."
+   - Click "Create Customer Gateway."<br>
    ![image](https://hackmd.io/_uploads/HJvNHmPHC.png)
 
 ### Step 3: Set Up the VPN Connection
@@ -48,7 +48,7 @@
    - Select the Customer Gateway you created earlier.
    - Choose the routing type (Static or Dynamic).
    - If static, enter the prefixes CIDR blocks for your on-premises network and VPC.
-   - Click "Create VPN Connection."
+   - Click "Create VPN Connection."<br>
    ![image](https://hackmd.io/_uploads/S1UiuXDB0.png)
 
 
@@ -60,7 +60,7 @@
 ### Step 4: Configure Your On-Premises Device
 
 1. **Use the Configuration File:**
-   - Open the downloaded configuration file. It contains the necessary parameters and commands to configure your on-premises device.
+   - Open the downloaded configuration file. It contains the necessary parameters and commands to configure your on-premises device.<br>
    ![image](https://hackmd.io/_uploads/rkaiKXDSC.png)
 
 
@@ -73,7 +73,7 @@
 1. **Update VPC Route Table:**
    - Go to "Route Tables" in the VPC dashboard.
    - Select the route table associated with your VPC.
-   - Add a new route, with the destination being your on-premises network CIDR block and the target being the Virtual Private Gateway.
+   - Add a new route, with the destination being your on-premises network CIDR block and the target being the Virtual Private Gateway.<br>
    ![image](https://hackmd.io/_uploads/rJLNo7wHC.png)
    ![image](https://hackmd.io/_uploads/BJ1U3mvHC.png)
 
@@ -86,7 +86,7 @@
 
 1. **Check the VPN Status on AWS:**
    - In the VPC dashboard, go to "VPN Connections."
-   - Select your VPN connection and check the status of the tunnels. They should be in the "UP" state if configured correctly.
+   - Select your VPN connection and check the status of the tunnels. They should be in the "UP" state if configured correctly.<br>
    ![image](https://hackmd.io/_uploads/Hy58aQvrC.png)
 
 
