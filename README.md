@@ -15,7 +15,6 @@
    - Click the "Create Virtual Private Gateway" button.
    - Provide a name for your gateway, and select the ASN (Autonomous System Number) or leave it as default.
    - Click "Create Virtual Private Gateway."<br>
-   ![image](https://hackmd.io/_uploads/BkqRB7wrA.png)
    ![image](https://github.com/otam-mato/aws_site-to-site_vpn/assets/113034133/1b656707-4651-4f44-a3ca-6ce4924c6214)
 
 
@@ -23,8 +22,7 @@
    - Once created, select the Virtual Private Gateway.
    - Click on "Actions" and select "Attach to VPC."
    - Choose the VPC you want to attach it to and click "Attach."<br>
-   ![image](https://hackmd.io/_uploads/H1gMvXwHC.png)
-
+   ![image](https://github.com/otam-mato/aws_site-to-site_vpn/assets/113034133/43e60883-9b59-41a4-a183-e9ff1240fd20)
 
 ### Step 2: Configure the Customer Gateway
 
@@ -38,7 +36,7 @@
    - Enter the public IP address of your on-premises router or firewall.
    - Select the BGP ASN (if using dynamic routing), or leave it blank for static routing.
    - Click "Create Customer Gateway."<br>
-   ![image](https://hackmd.io/_uploads/HJvNHmPHC.png)
+   ![image](https://github.com/otam-mato/aws_site-to-site_vpn/assets/113034133/d8016696-a49f-480f-924e-d659f8bf29fe)
 
 ### Step 3: Set Up the VPN Connection
 
@@ -51,7 +49,8 @@
    - Choose the routing type (Static or Dynamic).
    - If static, enter the prefixes CIDR blocks for your on-premises network and VPC.
    - Click "Create VPN Connection."<br>
-   ![image](https://hackmd.io/_uploads/S1UiuXDB0.png)
+   ![image](https://github.com/otam-mato/aws_site-to-site_vpn/assets/113034133/58d47533-9bac-40ff-9ca7-5a8dc706c087)
+
 
 
 2. **Download the VPN Configuration:**
@@ -63,7 +62,8 @@
 
 1. **Use the Configuration File:**
    - Open the downloaded configuration file. It contains the necessary parameters and commands to configure your on-premises device.<br>
-   ![image](https://hackmd.io/_uploads/rkaiKXDSC.png)
+   ![image](https://github.com/otam-mato/aws_site-to-site_vpn/assets/113034133/6b2bf785-45c2-4d55-a569-c8ebe6c7b71e)
+
 
 
 2. **Configure Your On-Premises Router/Firewall:**
@@ -76,10 +76,8 @@
    - Go to "Route Tables" in the VPC dashboard.
    - Select the route table associated with your VPC.
    - Add a new route, with the destination being your on-premises network CIDR block and the target being the Virtual Private Gateway.<br>
-   ![image](https://hackmd.io/_uploads/rJLNo7wHC.png)
-   ![image](https://hackmd.io/_uploads/BJ1U3mvHC.png)
-
-
+   ![image](https://github.com/otam-mato/aws_site-to-site_vpn/assets/113034133/90fcaab8-2728-44ae-a47b-bc2d8067671f)
+   ![image](https://github.com/otam-mato/aws_site-to-site_vpn/assets/113034133/ff5acd9c-23da-4893-ad01-40850a6247d5)
 
 2. **Update On-Premises Routing:**
    - Ensure that your on-premises network has routes configured to send traffic destined for the AWS VPC through the VPN tunnel.
@@ -89,7 +87,8 @@
 1. **Check the VPN Status on AWS:**
    - In the VPC dashboard, go to "VPN Connections."
    - Select your VPN connection and check the status of the tunnels. They should be in the "UP" state if configured correctly.<br>
-   ![image](https://hackmd.io/_uploads/Hy58aQvrC.png)
+   ![image](https://github.com/otam-mato/aws_site-to-site_vpn/assets/113034133/eae3ce81-50ce-4bb7-96e1-3f8be0371d03)
+
 
 
 2. **Verify Connectivity:**
