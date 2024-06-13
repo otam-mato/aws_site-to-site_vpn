@@ -16,6 +16,8 @@
    - Provide a name for your gateway, and select the ASN (Autonomous System Number) or leave it as default.
    - Click "Create Virtual Private Gateway."<br>
    ![image](https://hackmd.io/_uploads/BkqRB7wrA.png)
+   ![image](https://github.com/otam-mato/aws_site-to-site_vpn/assets/113034133/1b656707-4651-4f44-a3ca-6ce4924c6214)
+
 
 4. **Attach the Virtual Private Gateway to Your VPC:**
    - Once created, select the Virtual Private Gateway.
